@@ -1,0 +1,56 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "json",
+  "dataset_size": 511944,
+  "description": "",
+  "download_size": 903270,
+  "features": {
+    "claim": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "claim_id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "claim_date": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "speaker": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "original_claim_url": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "reporting_source": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "location_ISO_code": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1415214,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 511944,
+      "num_examples": 2215,
+      "dataset_name": "json"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "claim": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "label": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "evidence_chain": {
+      "feature": {
+        "question": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "answers": {
+          "feature": {
+            "answer": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "answer_type": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "boolean_explanation": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "cached_source_url": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "source_medium": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "source_url": {
+              "dtype": "string",
+              "_type": "Value"
+            }
+          },
+          "_type": "List"
+        }
+      },
+      "_type": "List"
+    },
+    "justification": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "speaker": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "source": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

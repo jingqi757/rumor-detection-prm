@@ -1,0 +1,130 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "averitec",
+  "dataset_size": 7125685,
+  "description": "",
+  "download_size": 3363933,
+  "features": {
+    "cached_original_claim_url": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "speaker": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "required_reannotation": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "reporting_source": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "label": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "claim_types": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "fact_checking_article": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "fact_checking_strategies": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "claim": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "justification": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "location_ISO_code": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "original_claim_url": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "questions": {
+      "feature": {
+        "answers": {
+          "feature": {
+            "answer": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "answer_type": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "boolean_explanation": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "cached_source_url": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "source_medium": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "source_url": {
+              "dtype": "string",
+              "_type": "Value"
+            }
+          },
+          "_type": "List"
+        },
+        "question": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "List"
+    },
+    "claim_date": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 10489618,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 6038474,
+      "num_examples": 3068,
+      "dataset_name": "averitec"
+    },
+    "dev": {
+      "name": "dev",
+      "num_bytes": 1087211,
+      "num_examples": 500,
+      "dataset_name": "averitec"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
