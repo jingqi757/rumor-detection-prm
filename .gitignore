@@ -1,0 +1,39 @@
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+
+# 虚拟环境
+venv/
+env/
+miniconda3/
+conda/
+.anaconda/
+
+# 模型文件（绝对不能传GitHub）
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.model
+*.onnx
+
+# 数据集和结果文件
+data/
+dev/
+test/
+train/
+*.jsonl
+*.json
+*.csv
+*.parquet
+*.log
+results/
+
+# 系统文件
+.DS_Store
+*.tmp
+*.swp
