@@ -2,13 +2,13 @@
 from datasets import load_from_disk, Dataset, DatasetDict
 import os
 import hashlib
-DATA_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.dirname(os.path.abspath(os.path.abspath(__file__)))
 
 # ============================================================
 # 方案A：AVeriTeC（推荐，天然多跳证据链）
 # ============================================================
-averitec = load_from_disk(os.path.join(DATA_DIR, "AVeriTeC"))
-averitec_test = load_from_disk(os.path.join(DATA_DIR, "AVeriTeC_test"))
+averitec = load_from_disk(os.path.join(DATA_DIR,"data", "AVeriTeC"))
+averitec_test = load_from_disk(os.path.join(DATA_DIR, "data", "AVeriTeC_test"))
 print("=== AVeriTeC ===")
 print(f"train: {len(averitec['train'])}, dev: {len(averitec['dev'])}, test: {len(averitec_test)}")
 
@@ -52,7 +52,7 @@ def load_liar_plus_tsv(path):
             })
     return data
 
-tsv_dir = os.path.join(DATA_DIR, "LIAR-PLUS/dataset/tsv")
+tsv_dir = os.path.join(DATA_DIR, "data", "LIAR-PLUS/dataset/tsv")
 liar_train = load_liar_plus_tsv(os.path.join(tsv_dir, "train2.tsv"))
 liar_val   = load_liar_plus_tsv(os.path.join(tsv_dir, "val2.tsv"))
 liar_test  = load_liar_plus_tsv(os.path.join(tsv_dir, "test2.tsv"))
@@ -158,7 +158,7 @@ validate_unified(liar_unified['train'], 'liar_train')
 # ============================================================
 # 保存
 # ============================================================
-out_dir = os.path.join(DATA_DIR, "unified")
+out_dir = os.path.join(DATA_DIR, "data","unified")
 os.makedirs(out_dir, exist_ok=True)
 
 averitec_unified.save_to_disk(os.path.join(out_dir, "averitec_unified"))

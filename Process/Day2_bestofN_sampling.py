@@ -8,7 +8,7 @@ import os
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from datasets import load_from_disk
 os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
-DATA_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ============================================================
 # 1. 加载模型（4-bit量化，8GB显存安全运行）
@@ -335,15 +335,15 @@ def _save_jsonl(data, path):
 # 入口
 # ============================================================
 if __name__ == "__main__":
-    unified_dir = os.path.join(DATA_DIR, "unified")
+    unified_dir = os.path.join(DATA_DIR, "data","unified")
     averitec = load_from_disk(os.path.join(unified_dir, "averitec_unified"))
     train_ds = averitec['train']
     
-    out_path = os.path.join(DATA_DIR, "day2_results.jsonl")
+    out_path = os.path.join(DATA_DIR, "data","day2_results.jsonl")
 
     # 第一步：先跑5条看效果
-    print("=== 快速验证（5条）===")
-    """for i in range(5):
+    """print("=== 快速验证（5条）===")
+    for i in range(5):
         results, prompt = process_sample(train_ds[i], n=3)
         print(f"\n--- 样本 {i} ---")
         print(f"claim: {train_ds[i]['claim'][:80]}")
